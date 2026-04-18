@@ -1,2 +1,1 @@
-# Provider version constraints are defined in main.tf
-# This file is intentionally minimal to avoid duplicate required_providers error.
+# intentionally empty — required_providers defined in main.tf
