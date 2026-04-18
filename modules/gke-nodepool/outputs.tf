@@ -8,11 +8,6 @@ output "node_pool_id" {
   value       = google_container_node_pool.this.id
 }
 
-output "node_pool_self_link" {
-  description = "Self-link URI of the node pool resource."
-  value       = google_container_node_pool.this.self_link
-}
-
 output "instance_group_urls" {
   description = "URLs of the managed instance groups backing this node pool."
   value       = google_container_node_pool.this.managed_instance_group_urls
