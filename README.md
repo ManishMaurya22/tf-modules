@@ -36,7 +36,7 @@ Pin to a specific version tag to avoid breaking changes:
 
 ```hcl
 module "my_nodepool" {
-  source = "git::https://github.com/manishmaurya/tf-modules//modules/gke-nodepool?ref=v1.0.0"
+  source = "git::https://github.com/ManishMaurya22/tf-modules//modules/gke-nodepool?ref=v1.0.0"
   # ...
 }
 ```
