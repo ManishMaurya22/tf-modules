@@ -41,7 +41,7 @@ variable "cluster_name" {
 # ── API service node pool (general workloads) ─────────────────────────────────
 
 module "api_nodepool" {
-  source = "git::https://github.com/manishmaurya/tf-modules//modules/gke-nodepool?ref=v1.0.0"
+  source = "git::https://github.com/ManishMaurya22/tf-modules//modules/gke-nodepool?ref=v1.0.0"
 
   project_id       = var.project_id
   cluster_name     = var.cluster_name
@@ -65,7 +65,7 @@ module "api_nodepool" {
 # ── Payments node pool (isolated, PCI-scoped) ─────────────────────────────────
 
 module "payments_nodepool" {
-  source = "git::https://github.com/manishmaurya/tf-modules//modules/gke-nodepool?ref=v1.0.0"
+  source = "git::https://github.com/ManishMaurya22/tf-modules//modules/gke-nodepool?ref=v1.0.0"
 
   project_id       = var.project_id
   cluster_name     = var.cluster_name
@@ -98,7 +98,7 @@ module "payments_nodepool" {
 # ── ML inference node pool (GPU) ──────────────────────────────────────────────
 
 module "ml_inference_nodepool" {
-  source = "git::https://github.com/manishmaurya/tf-modules//modules/gke-nodepool?ref=v1.0.0"
+  source = "git::https://github.com/ManishMaurya22/tf-modules//modules/gke-nodepool?ref=v1.0.0"
 
   project_id       = var.project_id
   cluster_name     = var.cluster_name

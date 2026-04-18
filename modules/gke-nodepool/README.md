@@ -25,7 +25,7 @@ Built from operational experience managing 60+ microservices on GCP at Cleartrip
 
 ```hcl
 module "api_nodepool" {
-  source = "git::https://github.com/manishmaurya/tf-modules//modules/gke-nodepool?ref=v1.0.0"
+  source = "git::https://github.com/ManishMaurya22/tf-modules//modules/gke-nodepool?ref=v1.0.0"
 
   project_id       = "my-gcp-project"
   cluster_name     = "prod-gke-europe"
@@ -46,7 +46,7 @@ module "api_nodepool" {
 
 ```hcl
 module "api_nodepool_dev" {
-  source = "git::https://github.com/manishmaurya/tf-modules//modules/gke-nodepool?ref=v1.0.0"
+  source = "git::https://github.com/ManishMaurya22/tf-modules//modules/gke-nodepool?ref=v1.0.0"
 
   project_id       = "my-gcp-project-dev"
   cluster_name     = "dev-gke-europe"
@@ -67,7 +67,7 @@ module "api_nodepool_dev" {
 
 ```hcl
 module "gpu_nodepool" {
-  source = "git::https://github.com/manishmaurya/tf-modules//modules/gke-nodepool?ref=v1.0.0"
+  source = "git::https://github.com/ManishMaurya22/tf-modules//modules/gke-nodepool?ref=v1.0.0"
 
   project_id       = "my-gcp-project"
   cluster_name     = "prod-gke-europe"
@@ -91,7 +91,7 @@ module "gpu_nodepool" {
 
 ```hcl
 module "fintech_nodepool" {
-  source = "git::https://github.com/manishmaurya/tf-modules//modules/gke-nodepool?ref=v1.0.0"
+  source = "git::https://github.com/ManishMaurya22/tf-modules//modules/gke-nodepool?ref=v1.0.0"
 
   project_id       = "my-gcp-project"
   cluster_name     = "prod-gke-europe"

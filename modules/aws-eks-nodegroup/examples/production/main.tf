@@ -11,7 +11,7 @@ variable "node_role_arn" { type = string }
 variable "subnet_ids"    { type = list(string) }
 
 module "api_nodegroup" {
-  source = "git::https://github.com/manishmaurya/tf-modules//modules/aws-eks-nodegroup?ref=v1.0.0"
+  source = "git::https://github.com/ManishMaurya22/tf-modules//modules/aws-eks-nodegroup?ref=v1.0.0"
 
   cluster_name   = var.cluster_name
   name           = "api-nodegroup"
@@ -27,7 +27,7 @@ module "api_nodegroup" {
 }
 
 module "api_nodegroup_dev" {
-  source = "git::https://github.com/manishmaurya/tf-modules//modules/aws-eks-nodegroup?ref=v1.0.0"
+  source = "git::https://github.com/ManishMaurya22/tf-modules//modules/aws-eks-nodegroup?ref=v1.0.0"
 
   cluster_name   = var.cluster_name
   name           = "api-nodegroup-dev"

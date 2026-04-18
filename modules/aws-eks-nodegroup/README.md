@@ -24,7 +24,7 @@ across US-East, EU-West, and AP-South regions.
 
 ```hcl
 module "api_nodegroup" {
-  source = "git::https://github.com/manishmaurya/tf-modules//modules/aws-eks-nodegroup?ref=v1.0.0"
+  source = "git::https://github.com/ManishMaurya22/tf-modules//modules/aws-eks-nodegroup?ref=v1.0.0"
 
   cluster_name  = "prod-eks-eu-west-1"
   name          = "api-nodegroup"
@@ -42,7 +42,7 @@ module "api_nodegroup" {
 
 # Dev with Spot instances
 module "api_nodegroup_dev" {
-  source = "git::https://github.com/manishmaurya/tf-modules//modules/aws-eks-nodegroup?ref=v1.0.0"
+  source = "git::https://github.com/ManishMaurya22/tf-modules//modules/aws-eks-nodegroup?ref=v1.0.0"
 
   cluster_name  = "dev-eks-eu-west-1"
   name          = "api-nodegroup-dev"

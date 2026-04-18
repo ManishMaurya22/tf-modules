@@ -15,7 +15,7 @@ variable "cluster_name" { type = string }
 
 # All pre-prod services share this Spot node pool
 module "dev_nodepool" {
-  source = "git::https://github.com/manishmaurya/tf-modules//modules/gke-nodepool?ref=v1.0.0"
+  source = "git::https://github.com/ManishMaurya22/tf-modules//modules/gke-nodepool?ref=v1.0.0"
 
   project_id       = var.project_id
   cluster_name     = var.cluster_name
@@ -33,7 +33,7 @@ module "dev_nodepool" {
 }
 
 module "staging_nodepool" {
-  source = "git::https://github.com/manishmaurya/tf-modules//modules/gke-nodepool?ref=v1.0.0"
+  source = "git::https://github.com/ManishMaurya22/tf-modules//modules/gke-nodepool?ref=v1.0.0"
 
   project_id       = var.project_id
   cluster_name     = var.cluster_name

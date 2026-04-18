@@ -16,7 +16,7 @@
  *
  * ```hcl
  * module "api_nodepool" {
- *   source = "git::https://github.com/manishmaurya/tf-modules//modules/gke-nodepool?ref=v1.0.0"
+ *   source = "git::https://github.com/ManishMaurya22/tf-modules//modules/gke-nodepool?ref=v1.0.0"
  *
  *   project_id       = "my-project"
  *   cluster_name     = "prod-gke-cluster"
